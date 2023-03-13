@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/style.css" type="text/css">
+    <title>membership</title>
+</head>
+<body>
+    <div class="top">
+        <div class="title">
+            <h1>회원가입</h1>
+        </div>
+        <div class="titleinfo">
+            <p>이용약관과 개인정보처리방침에 대한 안내를 읽고 동의해주세요.</p>
+        </div>
+        <div class="sequence">
+            <span class = "step1">1.약관동의</span>
+            <span class = "arrow">></span>
+            <span class = "step2">2.회원가입</span>
+            <span class = "arrow">></span>
+            <span class = "step3">3.가입완료</span>
+        </div>
+    </div>
+    </div>
+    <div class="titleArea">
+        <p>&lt; 기본정보 &gt;</p>
+    </div>
+<div class="registForm">
+    <form action="/member/regist" method="post">
+        <table style="margin: 0 auto">
+            <tr>
+                <td>이름</td>
+                <td><input type="text" maxlength="13" name="memberName" required></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="width: 120px">아이디 </td>
+                <td><input type="text" maxlength="13" name="memberId" id="memberId" class="inputId" required></td>
+                <td style="width: 100px"><input type="button" value="중복확인" id="duplicationCheck"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" maxlength="13" name="memberPwd" required></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>비밀번호확인</td>
+                <td><input type="password" maxlength="13" name="memberPwd2" required></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>휴대전화</td>
+                <td><input type="tel" name="phone"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" name="email"></td>
+                <td>@</td>
+                <td>
+                    <select>
+                        <option>naver.com</option>
+                        <option>google.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>우편번호</td>
+                <td><input type="text" name="zipCode" id="zipCode" readonly></td>
+                <td><input type="button" value="검색" id="searchZipCode"></td>
+            </tr>
+            <tr>
+                <td>주소</td>
+                <td><input type="text" name="address1" id="address1" readonly></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>상세주소</td>
+                <td><input type="text" name="address2" id="address2"></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+        <div class="base-button">
+            <a href="#none" class="btnExit">취소</a>
+            <a href="#none" class="btnSubmit">다음</a>
+        </div>
+    </form>
+</div>
+
+
+        
+
+</body>
+</html>
